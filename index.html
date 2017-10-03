@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JohnDoe-Portfolio</title>
+    <link rel="stylesheet" href="css/john.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,//根元素html
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',//横屏
+                recalc = function () {
+                    var clientWidth = docEl.getBoundingClientRect().width;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = (clientWidth / 10) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false)//绑定浏览器缩放与加载时间
+            recalc();
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header__picture--left">
+            <img src="images/JohnDoe-Portfolio.png" alt="">
+        </div>
+        <div class="header__links--right">
+            <ul class="links-nav clearfix">
+                <li><a href="">Selected works</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="links-intro">
+                <p class="links-down">schrool down to view my works</p>
+                <p class="links-word">POL <span>ENG</span></p>
+            </div>
+        </div>
+        <div class="header__selfinfor--center">
+            <p class="icon">X</p>
+            <p class="self-name">John <span>Doe</span></p>
+            <p class="self-job">Personal <span>Portfolio</span></p>
+            <p class="circle"></p>
+        </div>
+
+    </div>
+    <div class="work-container">
+        <div class="work-brief">
+            <p>Hello. I’m John Doe 25 years old <span>Graphic Designer</span> specialize in <span>mobile apps</span> from Warsaw,
+                Poland.
+            </p>
+        </div>
+        <div class="circle-icons clearfix ">
+            <ul class="clearfix">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="six-weeks item">
+        <div class="content">
+            <div class="content-picture">
+
+            </div>
+            <div class="content-desc">
+                <h2>Just 6ix Weeks</h2>
+                <p>Just 6ix Weeks is a fitness app PSD template. Just 6ix Weeks looks sleek, modern and has fully editable 6
+                    screens ready to use for your next design project.</p>
+            </div>
+            <div class="content-tabs">
+                <span class="tab-active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ui-kit item">
+        <div class="content">
+            <div class="content-desc">
+                <h2>Ventas UI Kit</h2>
+                <p>Ventas is designed for travel magazines and readers to share their experience. This UI Kit with 6 fully customizable
+                    screens</p>
+            </div>
+            <div class="content-picture">
+
+            </div>
+
+            <div class="content-tabs">
+                <span class="tab-active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="Faumail item">
+        <div class="content">
+            <div class="content-picture">
+
+            </div>
+            <div class="content-desc">
+                <h2>Faumail</h2>
+                <p>Faumail is a clean looking mobile UI kit for mail app design including high quality 6 screens. This incredible
+                    design theme can help you create great looking mobile app.</p>
+            </div>
+            <div class="content-tabs">
+                <span class="tab-active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="view-project">
+        <a href="">View moar projects</a>
+    </div>
+    <div class="contact">
+        <h4>Contact</h4>
+        <p>
+            You can reach me for an inquiry or just to say hello
+            <a href="mail">imawesome@johndoe.co</a>
+        </p>
+    </div>
+    <div class="contact-form">
+        <h3>Contact form</h3>
+        <div class="place">
+            <input type="text" class="" placeholder=""><label for="">Patryk Wasik</label>
+
+        </div>
+        <input type="text" placeholder="E-mail adress">
+        <input type="text" placeholder="Your budget range">
+        <textarea name="" id="" cols="30" rows="10">Your message</textarea>
+        <button type="submit">send</button>
+        <a href="">Take me to top</a>
+
+    </div>
+</body>
+
+</html>
